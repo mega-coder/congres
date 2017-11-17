@@ -1,0 +1,105 @@
+body{
+    
+    background:#f3f3f3;
+}
+
+
+
+.formulaire {
+    width:50%;
+    margin:auto;
+    position:relative;
+    top:5%;
+    background: white;
+    font-family:'Arimo';
+    font-weight:bold;
+}
+
+
+label,span{
+    color:limegreen;
+}
+
+
+.formulaire_content{
+         
+    padding:5%; 
+    
+
+}
+
+
+input ,select{
+    border-radius:0px;
+    margin-bottom:10px; 
+}
+
+input[type=submit]{
+    margin-top:2%;
+    border-radius:0px;
+    padding-left:4%;
+    padding-right:4%;
+    padding-top:2%;
+    padding-bottom:2%;
+    font-weight:bold;
+    color:white;
+    box-shadow:none;
+    background:limegreen;     
+    border:none;
+}
+
+#telephone img {
+    width:30px;
+    height:20px;
+}
+#telephone input{
+    border: 1px solid rgba(0,0,0,.15);
+}
+
+
+
+ input[type="text"]::-webkit-input-placeholder { 
+  color:lightgrey;
+}
+
+
+ input[type="email"]::-webkit-input-placeholder { 
+  color:lightgrey;
+}
+
+ input[type="number"]::-webkit-input-placeholder { 
+  padding-left:10px;
+  color:lightgrey;
+}
+
+
+.notification{
+    position:absolute;
+    background:rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    z-index:2;
+    display:none;
+}
+
+.notification_content{
+    width:40%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15%;
+    background: white;
+    border:1px solid green;
+    border-radius:5px;
+    
+}
+
+    
+.message{
+        padding:3%;
+        color:green;
+        text-align:center;
+        font-weight:bold;
+        
+    }
+
+

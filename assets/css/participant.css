@@ -1,0 +1,39 @@
+body{
+    
+    background:#f3f3f3;
+    font-family:'Arimo'; 
+    font-weight:bold;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.nom_prenom{
+    height:30px;
+}
+
+
+#content{
+    
+    width:50%;
+    margin:auto;
+    height:45%;
+    background:white;
+    margin-top:10%;
+
+}
+
+#condidature{
+    
+    width:90%;
+    margin:auto;
+    padding-top:3%;
+    padding-bottom:3%; 
+}
+
+
+#condidature span{
+    font-family: 'Arimo';
+    font-size : 17px;
+}

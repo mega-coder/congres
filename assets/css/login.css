@@ -1,0 +1,57 @@
+body{
+    
+    background:#f3f3f3;
+    font-family:'Arimo';
+    color:limegreen;
+    font-weight:bold;
+
+}
+
+input[type=email]{
+    border-radius:0px; 
+}
+
+
+input[type=password]{
+    border-radius:0px; 
+}
+
+#form_content{
+    width:50%;
+    margin:auto;
+    margin-top:10%;
+    background:white;    
+}
+
+
+#form_content form{
+    
+    position:relative;
+    width:90%;
+    margin:auto;
+    padding-top:3%;
+    padding-bottom:3%; 
+}
+
+
+input[type=submit]{
+    border:none;
+    border-radius:0px;
+    color: white;
+    font-weight: bold;
+    background:limegreen; 
+    padding:1% 4%;
+    margin-top: 3%;
+
+}
+
+#oublier a{
+    float:right; 
+    margin-top: 4%;
+    text-decoration: underline;
+    
+}
+
+
+
+

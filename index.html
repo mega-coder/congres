@@ -1,0 +1,92 @@
+<html>
+    
+    <head>
+        <title>Inscription</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/inscription.css" > 
+    </head>
+    
+    <body>
+      
+        <div class="notification">
+           <div class=notification_content>
+               <div class="message">
+                   vous receverez un email de confirmation contenant votre mot de passe 
+               </div> 
+           </div>
+        </div>
+       <div class="formulaire">
+         
+           <div class="formulaire_content">
+                  <form class="form-group" method="post" name="form" action="inscription.php" id="form" enctype="multipart/form-data">
+                         <label>Nom</label>
+                         <input type="text" placeholder="votre nom" id="nom" name="nom" class='form-control' required />
+                         <label>Prenom</label>
+                         <input type="text" placeholder="votre prenom" id="prenom" name="prenom" class='form-control' required /> 
+                         <label>Email</label>
+                         <input type="email" placeholder="votre Email" id="e" name="email" class='form-control' required /> 
+                         <h6 id="message"></h6>
+                         <label>Pays</label>
+                         <select class="form-control" name="pays" id="countries" required style="margin-bottom:10px">
+                         </select>
+                         <label>Téléphone</label>
+                         <div id="telephone">
+                             <img src="" alt="flag" class="responsive-image" style="margin-right:5px;"/>+<span id="code"></span>
+                             <input type="number" id="telephonee" name="telephone" required placeholder="votre  telephone"style="display:inline;width:87%;height:5%"/>    
+                         </div>
+                         <label>Participation</label>
+                         <div style="padding:2%;border:1px solid rgba(0,0,0,.15);">
+                             <input type="radio" name="participation" value="sans" checked><span style="margin-right:5px">simple</span>
+                             <input type="radio" name="participation" id="x" value ="avec"required><span>avec support</span>
+                         </div>                        
+                         <div class="avec_support" style="display:none">
+                             <label>Type de Support</label>
+                             <select class="form-control" id="type" name="type"  style="margin-bottom:10px">
+                                <option value="orale" >Comm Orale </option>
+                                <option value="poster" >Comm Poster </option>
+                             </select> 
+                             <div style="padding-top:2%">
+                                <div>
+                                 <span style="color:red">veuillez remplir ce formulaire  :  </span>
+                                 <a href="Formulaires_Orales/Formulaire_Orale.docx">Formulaire_Orale</a>
+                                 </div>
+                                 <div>
+                                     <span style="color:black">chargez le fichier rempli</span>
+                                 <input type="file"class="form-control" name="formulaire" id="formulaire"/>
+                                 </div>
+                             </div>
+                             <label>Thème</label>
+                             <select class="form-control" id="theme" name="theme" style="margin-bottom:10px">
+                                 <option value="theme1" >Theme1</option>
+                                 <option value="theme2" >Theme2</option>
+                                 <option value="theme3" >Theme3</option>
+                             </select> 
+                             <label>Grade/Niveau</label>
+                             <select class="form-control" id="grade" name="grade" style="margin-bottom:10px">
+                                 <option value="Professeur" >Professeur</option>
+                                 <option value="Maître de Conférences" >Maître de Conférences</option>
+                                 <option value="Maître-Assistant" > Maître-Assistant</option>
+                                 <option value="Assistant" > Assistant</option>
+                                 <option value="chargé de rechecherche" > chargé de rechecherche</option>
+                                 <option value="Doctorant" > Doctorant</option>
+                                 <option value="Mastere">Mastere</option>
+                             </select> 
+                             <label>Titre de la Communication</label>
+                             <input type="text" placeholder="votre titre de communication" id="titre"     name="titre_communication" class='form-control'/>
+                            <label>Structure de recherche</label>
+                             <input type="text" placeholder="votre structure de recherche" name="   structure_recherche" class='form-control' > 
+                             <label>Université/Centre de recherche</label>
+                             <input type="text" placeholder="université ou centre de recherche" name="universite" class='form-control' >
+                        </div>
+                             <input type="submit" id="submit"  value="S'inscrire" name="submit"/>
+                                   
+                  </form>
+            </div>       
+       </div>
+  
+        <script src='assets/js/jquery-3.2.1.min.js'></script>  
+        <script src="assets/js/inscription.js"></script>
+    </body>
+</html>
